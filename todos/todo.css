@@ -1,0 +1,97 @@
+.container{
+    
+    background: linear-gradient(120deg,rgb(192, 90, 8),rgb(219, 10, 97));
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.todo-app{
+     width: 100%;
+    max-width: 340px;
+    background:whitesmoke;
+    margin: 20px auto 20px ;
+    padding: 10px ;
+    border-radius: 10px; 
+}
+.todo-app h2{
+   align-items: center;
+    margin-top: 50px;
+    display: flex;
+}
+.todo-app h2 img{
+    width: 60px;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding-left: 20px;
+    background:gainsboro;
+
+}
+input{
+    
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    color:aliceblue;
+    background-color:pink;
+    cursor: pointer;
+    font-size: 10px;
+}
+ ul li{
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 17px;
+    padding: 12px  8px 12px 50px;
+    font-weight: bolder;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://th.bing.com/th/id/OIP.23luG2S13hfMKdUSkeT-TQAAAA?w=120&h=128&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 10px;
+    
+}
+ul li.checked{
+    color:grey;
+text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://imagepng.org/wp-content/uploads/2019/12/check-icone-1-scaled.png");
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:10px;
+    height: 40px;
+    width: 40px;
+    color: red;
+    text-align: center;
+    line-height: 40px;
+}
+
+ul li span:hover{
+    background:rgba(128, 128, 128, 0.539);
+    border-radius: 50%;
+}
